@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Binnadang Café</title>
+
+  <link href="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* ====== GENERAL STYLES ====== */
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ====== NAVBAR ====== */
+    .navbar {
+      background-color: #064420;
+    }
+
+    .navbar .nav-link, 
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar .nav-link:hover, 
+    .navbar .nav-item .active {
+      color: #d1f0c2 !important;
+    }
+
+    /* ====== HERO / INTRO ====== */
+    section {
+      padding: 60px 15px;
+    }
+
+    .intro-section img {
+      max-height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* ====== STORY SECTION ====== */
+    .story-section img {
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ====== MISSION VISION ====== */
+    .promo-section {
+      background-color: #e9f5ec;
+      padding: 60px 15px;
+      border-radius: 8px;
+      margin: 60px 0;
+    }
+
+    /* ====== TEAM SECTION ====== */
+    .team-section img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border: 3px solid #198754;
+      transition: transform 0.3s;
+    }
+
+    .team-section img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ====== CTA ====== */
+    .cta-section {
+      background-color: #198754;
+      color: white;
+      padding: 60px 20px;
+      border-radius: 8px;
+    }
+
+    .cta-section a {
+      background-color: #fff;
+      color: #198754;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .cta-section a:hover {
+      background-color: #d1f0c2;
+      color: #064420;
+    }
+
+    /* ====== SOCIAL LINKS ====== */
+    .social-links i {
+      color: #198754;
+      transition: color 0.3s ease;
+    }
+
+    .social-links i:hover {
+      color: #064420;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 0;
+    }
+
+    /* ====== MOBILE OPTIMIZATION ====== */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+
+      .cta-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .promo-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .team-section .col-md-4 {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Binnadang Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-basket"></i> Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="produce.html"><i class="bi bi-flower1"></i> Fresh Produce</a></li>
+              <li><a class="dropdown-item" href="coffee.html"><i class="bi bi-cup"></i> Coffee Blends</a></li>
+              <li><a class="dropdown-item" href="pastries.html"><i class="bi bi-cake"></i> Pastries</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="bi bi-cart"></i> Cart</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-person"></i> Account</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+              <li><a class="dropdown-item" href="register.html"><i class="bi bi-pencil-square"></i> Register</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== BRAND INTRODUCTION ====== -->
+  <section class="intro-section text-center mt-5 pt-5">
+    <h1 class="fw-bold text-success">About Binnadang Café</h1>
+    <p class="lead">Rooted in community, brewed with love — we bring people together through sustainability and flavor.</p>
+    <img src="img/about-hero.jpg" alt="Binnadang Café Front" class="img-fluid rounded shadow-sm my-4">
+  </section>
+
+  <!-- ====== OUR STORY ====== -->
+  <section class="story-section container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Farmers harvesting coffee" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-success">Our Story</h2>
+        <p><strong>Binnadang Café</strong> began as a small initiative to connect local farmers with coffee lovers who value authenticity. The term <strong>“Binnadang”</strong> embodies the Indigenous value of community cooperation — a guiding principle behind our brand.</p>
+        <p>We partner with local growers across Mountain Province to promote fair trade, sustainability, and cultural pride. Every cup you enjoy helps uplift communities and preserve traditions passed down for generations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MISSION & VISION ====== -->
+  <section class="promo-section text-center">
+    <div class="container">
+      <h2 class="fw-bold">Our Mission & Vision</h2>
+      <p class="mt-3"><strong>Mission:</strong> To serve quality, sustainable, and community-sourced coffee and food that celebrate local culture and craftsmanship.</p>
+      <p><strong>Vision:</strong> To be a leading advocate for ethical coffee practices and a hub where culture, sustainability, and community thrive together.</p>
+    </div>
+  </section>
+
+  <!-- ====== CALL TO ACTION ====== -->
+  <section class="cta-section text-center my-5">
+    <h2 class="fw-bold">Join Our Journey</h2>
+    <p>Be part of a growing movement that supports farmers, celebrates culture, and promotes sustainability.</p>
+    <a href="coffee.html" class="btn btn-light btn-lg mt-2"><i class="bi bi-bag"></i> Explore Our Products</a>
+  </section>
+
+  <!-- ====== TEAM ====== -->
+  <section class="team-section container my-5">
+    <h2 class="text-center text-success mb-4">Meet the Binnadang Team</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <img src="img/team1.jpg" class="rounded-circle mb-3" alt="Team Member 1">
+        <h5 class="fw-bold">Ganayo Pekas</h5>
+        <p>Founder & Head Barista</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/team2.jpg" class="rounded-circle mb-3" alt="Team Member 2">
+        <h5 class="fw-bold">Kyla Dominguez</h5>
+        <p>Marketing & Community Lead</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/team3.jpg" class="rounded-circle mb-3" alt="Team Member 3">
+        <h5 class="fw-bold">Henri Fagel</h5>
+        <p>Supply Chain Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GOOGLE MAP ====== -->
+  <section class="container my-5 text-center">
+    <h2 class="text-success mb-3">Find Us</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61977.67416631954!2d120.9605491!3d17.0872216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33903a2c6ad4e141%3A0xbdd9c1a3ec91e25a!2sBontoc%2C%20Mountain%20Province!5e0!3m2!1sen!2sph!4v1697299999999!5m2!1sen!2sph"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- ====== SOCIAL LINKS ====== -->
+  <section class="text-center mb-5">
+    <h2 class="text-success">Connect With Us</h2>
+    <div class="social-links d-flex justify-content-center gap-4 mt-3">
+      <a href="#"><i class="bi bi-facebook fs-3"></i></a>
+      <a href="#"><i class="bi bi-instagram fs-3"></i></a>
+      <a href="#"><i class="bi bi-twitter-x fs-3"></i></a>
+      <a href="#"><i class="bi bi-envelope fs-3"></i></a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="text-center">
+    <p>© 2025 Binnadang Café | Rooted in Community, Brewed with Love.</p>
+  </footer>
+
+  <script src="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

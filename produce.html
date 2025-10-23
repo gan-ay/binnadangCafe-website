@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresh Produce | Binnadang Café</title>
+<link href="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 70px;
+  }
+
+  .navbar {
+    background-color: #1b4332;
+  }
+  .navbar .nav-link, .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar .nav-link:hover {
+    color: #95d5b2 !important;
+  }
+
+  h1 {
+    color: #1b4332;
+    font-weight: 700;
+  }
+
+  /* Make all cards uniform */
+  .card {
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  /* Image uniformity */
+  .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-title {
+    font-weight: 600;
+    color: #1b4332;
+  }
+
+  .price {
+    color: #2d6a4f;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .btn-success {
+    background-color: #2d6a4f;
+    border: none;
+  }
+  .btn-success:hover {
+    background-color: #1b4332;
+  }
+
+  footer {
+    background-color: #1b4332;
+  }
+
+  .promo-banner {
+    background: linear-gradient(90deg, #2d6a4f, #52b788);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Binnadang Café</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-basket"></i> Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="produce.html"><i class="bi bi-flower1"></i> Fresh Produce</a></li>
+            <li><a class="dropdown-item" href="coffee.html"><i class="bi bi-cup"></i> Coffee Blends</a></li>
+            <li><a class="dropdown-item" href="pastries.html"><i class="bi bi-cake"></i> Pastries</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="bi bi-cart"></i> Cart</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-person"></i> Account</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+            <li><a class="dropdown-item" href="register.html"><i class="bi bi-pencil-square"></i> Register</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Promotional Banner -->
+<div class="container mt-4">
+  <div class="promo-banner text-center">
+    <h2>🌱 Farm-Fresh Fridays!</h2>
+    <p>Get 10% off all produce every Friday. Support local farmers and enjoy nature’s goodness.</p>
+  </div>
+</div>
+
+<!-- Fresh Produce Section -->
+<section class="container my-5">
+  <div class="text-center mb-4">
+    <h1>Fresh Produce</h1>
+    <p class="lead">Locally sourced fruits and vegetables straight from the farms of Mountain Province.</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card w-100">
+        <img src="img/produce1.png" class="card-img-top" alt="Tomatoes">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Organic Tomatoes</h5>
+            <p class="card-text">Juicy, vine-ripened tomatoes grown with care and no pesticides.</p>
+          </div>
+          <div>
+            <p class="price">₱120 / kilo</p>
+            <button class="btn btn-success w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card w-100">
+        <img src="img/produce2.png" class="card-img-top" alt="Lettuce">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Crisp Lettuce</h5>
+            <p class="card-text">Fresh and crunchy lettuce harvested daily for your salads.</p>
+          </div>
+          <div>
+            <p class="price">₱80 / head</p>
+            <button class="btn btn-success w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card w-100">
+        <img src="img/produce3.png" class="card-img-top" alt="Carrots">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Sweet Carrots</h5>
+            <p class="card-text">Crunchy and full of natural sweetness — perfect for juicing or cooking.</p>
+          </div>
+          <div>
+            <p class="price">₱90 / kilo</p>
+            <button class="btn btn-success w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card w-100">
+        <img src="img/produce4.png" class="card-img-top" alt="Broccoli">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Green Broccoli</h5>
+            <p class="card-text">Rich in vitamins and antioxidants for a healthy diet.</p>
+          </div>
+          <div>
+            <p class="price">₱150 / kilo</p>
+            <button class="btn btn-success w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card w-100">
+        <img src="img/produce5.png" class="card-img-top" alt="Bell Peppers">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Bell Peppers</h5>
+            <p class="card-text">A colorful mix of red, yellow, and green bell peppers.</p>
+          </div>
+          <div>
+            <p class="price">₱140 / kilo</p>
+            <button class="btn btn-success w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card w-100">
+        <img src="img/produce6.png" class="card-img-top" alt="Potatoes">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Mountain Potatoes</h5>
+            <p class="card-text">Locally grown potatoes — earthy, fluffy, and farm-fresh.</p>
+          </div>
+          <div>
+            <p class="price">₱110 / kilo</p>
+            <button class="btn btn-success w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="container text-center mb-5">
+  <h3 class="mb-3">Support Local Farmers</h3>
+  <p>Every purchase directly supports farmers in Mountain Province. Together, we grow a better community.</p>
+  <a href="cart.html" class="btn btn-success px-4"><i class="bi bi-cart-check"></i> Shop Now</a>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-white py-4">
+  <p>© 2025 Binnadang Café | Grown with Love, Served Fresh.</p>
+</footer>
+
+<script src="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
